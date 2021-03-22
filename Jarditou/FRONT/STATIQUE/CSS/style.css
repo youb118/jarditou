@@ -10,6 +10,7 @@ footer
 {
     background-color: black;
 }
+
 .colorfooter
 {
     color: white;
@@ -17,9 +18,26 @@ footer
 .Toutlejardin {
     font-size: 25px;
 }
-header {
-    width: 1110px;
+.Toutlejardin
+{
+    position: relative;
+    text-align: center;
+    right: -120px;
 }
-footer {
-    width: 1110px;
+.logo-jarditou {
+    width: 0px;
+    height: 0px;
+}
+.menu {
+    right: -50;
+    text-align: center;
+}
+#promotion {
+    width: 100%;
+}
+body{
+    font-size: 18px;
+}
+.position-entete {
+    right: -200px;
 }
