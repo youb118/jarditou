@@ -14,7 +14,12 @@ footer
 {
     color: white;
 }
-
 .Toutlejardin {
     font-size: 25px;
+}
+header {
+    width: 1110px;
+}
+footer {
+    width: 1110px;
 }
