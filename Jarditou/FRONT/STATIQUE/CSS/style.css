@@ -1,5 +1,8 @@
+
 nav {
-    background-color: black
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 5px; 
 }
 .menu
 {
@@ -9,6 +12,8 @@ nav {
 footer
 {
     background-color: black;
+    padding: 20px;
+    margin-bottom: 5px; 
 }
 
 .colorfooter
@@ -37,7 +42,4 @@ footer
 }
 body{
     font-size: 18px;
-}
-.position-entete {
-    right: -200px;
 }
