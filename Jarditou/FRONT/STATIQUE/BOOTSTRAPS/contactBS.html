@@ -1,74 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>contact</title>
 </head>
+
 <body>
-<div class="Container">
-<header>
-    <img src="img/jarditou_logo.jpg" height="100" alt="Logo Jarditou" title="Logo Jarditou">
-    <p>La qualité depuis 70 ans</p>
-<nav>
-<ul>
-    <li><a href="acceuilBS.html" class="menu" title="Page d'accueil">Accueil</a></li>
-    <li><a href="TableauBS.html" class="menu" title="tableau">Tableau</a></li>
-    <li><a href="contactBS.html" class="menu" title="contact">Formulaire</a></li>
-</ul>
-</nav>
-</header>
-<img src="img/promotion.jpg" width="100%">
-<form>
-    <fieldset>  
-                            <legend>Vos coordonnées</legend>
-                            <label for="nom">Votre nom*</label><input type="text" name="Votre nom"requiered><br>
-                            <label for="prenom">Votre prenom*</label><input type="text" name="Votre prenom"requiered><br>                   
-                            <label for="sexe">Sexe*</label><input type="radio" name="sexe" value="Féminin"requiered> Feminin <input type="radio" name="sexe" value="Masculin"requiered> Masculin</label><br>
-                            <label for="nom">Votre nom*</label><input type="text" name="Votre nom"required><br>
-                            <label for="prenom">Votre prenom*</label><input type="text" name="Votre prenom"required><br>                   
-                            <label for="sexe">Sexe*</label><input type="radio" name="sexe" value="Féminin"required> Feminin <input type="radio" name="sexe" value="Masculin"requiered> Masculin</label><br>
-                            <br>
-                            <label for="date">Date de naissance*</label><input type="date" name="ddn" id="date" required><br>
-                            <label for="cp">Code postal*</label><input type="text" name="CP" required><br>
-                            <label for="adresse">Adresse</label><input type="text" name="Adresse"><br>
-                            <label for="ville">Ville</label><input type="text" name="ville"><br>
-                            <label for="email">Email*</label><input type="email" name="email" required placeholder=dave.loper@afpa.fr><br>                  
-    </fieldset>
-    <fieldset>
-                            <legend>Votre demande</legend>
-                            <label for="sujet">Sujet*</label>
-                            <select id="sujet" required> 
-                               <option value="" selected> Veuillez séléctionner un sujet</option> 
-                               <option value="Mes commandes" selected> Mes commandes</option>
-                               <option value="Question sur un produit" selected>Question sur un produit</option>
-                               <option value="Réclamation" selected>Réclamation</option>
-                               <option value="autres" selected>Autres</option>
-                            </select><br>
-                            <label for="Question">votre question*</label>  
-                            <textarea name="Sujet" rows="2" cols="25" required></textarea>
-    </fieldset>
-</form>
-<!--Fin du formulaire, a corriger avec les requierd-->
-<br>
-<input type="checkbox" name="valider" value="valider"requiered>* J'accepte le traitement informatique de ce formulaire</label><br>
-<br>
-<input type="submit" value="Envoyer">
-<input type="reset" value="Annuler">
-<footer>
-    <hr>
-    <ul>
-      <li><a href="Mention légales.html" title="mention legales">Mention légales</a></li>
-      <li><a href="horaires.html" title="horaires">Horaires</a></li>
-      <li><a href="Plan du site.html" title="plan du site">Plan du site</a></li>
-  </ul>
-</footer>
- <!--Java script-->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</div>
+    <div class="container">
+        <header>
+            <div class="row d-none d-md-flex">
+                <img class="col-2 img-fluid" src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou"
+                    id="logo"><br>
+                <div class="col-10 h2 align-self-center text-right  ">La qualité depuis 70 ans</div>
+                <nav>
+                    <ul>
+                        <li><a href="acceuilBS.html" class="menu" title="Page d'accueil">Accueil</a></li>
+                        <li><a href="TableauBS.html" class="menu" title="tableau">Tableau</a></li>
+                        <li><a href="contactBS.html" class="menu" title="contact">Formulaire</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <img src="img/promotion.jpg" width="100%">
+        <form>
+            <div class="form-group">
+                <p>* Ces zones sont obligatoire</p>
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for="nom">Nom*</label><input type="text" name="Votre nom" requiered><br>
+                    <label for="prenom">Prenom*</label><input type="text" name="Votre prenom" requiered><br>
+                    <label for="sexe">Sexe*</label><input type="radio" name="sexe" value="Féminin" requiered> Feminin
+                    <input type="radio" name="sexe" value="Masculin" requiered> Masculin</label><br>
+
+                    <br>
+                    <label for="date">Date de naissance*</label><input type="date" name="ddn" id="date" required><br>
+                    <label for="cp">Code postal*</label><input type="text" name="CP" required><br>
+                    <label for="adresse">Adresse</label><input type="text" name="Adresse"><br>
+                    <label for="ville">Ville</label><input type="text" name="ville"><br>
+                    <label for="email">Email*</label><input type="email" name="email" required
+                        placeholder=dave.loper@afpa.fr><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Votre demande</legend>
+                    <label for="sujet">Sujet*</label>
+                    <select id="sujet" required>
+                        <option disabled="" selected> Veuillez séléctionner un sujet</option>
+                        <option value="Mes commandes" selected> Mes commandes</option>
+                        <option value="Question sur un produit" selected>Question sur un produit</option>
+                        <option value="Réclamation" selected>Réclamation</option>
+                        <option value="autres" selected>Autres</option>
+                    </select><br>
+                    <label for="Question">votre question*</label>
+                    <textarea name="Sujet" rows="2" cols="25" required></textarea>
+                </fieldset>
+            </div>
+        </form>
+        <!--Fin du formulaire, a corriger avec les requierd-->
+        <br>
+        <input type="checkbox" name="valider" value="valider" requiered>* J'accepte le traitement informatique de ce
+        formulaire</label><br>
+        <br>
+        <button type="button" class="btn btn-dark">Envoyer</button>
+        <button type="button" class="btn btn-dark">Annuler</button>
+        <footer>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Mention légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+        <!--Java script-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>

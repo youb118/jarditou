@@ -8,15 +8,18 @@
     <title>Accueil</title>
 </head>
 <body>
-  <div class="Container">
+  <div class="container">
 <header>
-<img src="img/jarditou_logo.jpg" height="100" alt="Logo Jarditou" title="Logo Jarditou">
-    <p>Tout le jardin</p>
+  <div class="row d-none d-md-flex">
+    <img class="col-2 img-fluid" src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" id="logo"><br>
+    <div class="col-10 h2 align-self-center text-right  ">Tout le jardin</div>
 <nav>
 <ul>
-    <li><a href="acceuilBS.html" class="menu" title="Page d'accueil">Accueil</a></li>
-    <li><a href="TableauBS.html" class="menu" title="tableau">Tableau</a></li>
-    <li><a href="contactBS.html" class="menu" title="contact">Formulaire</a></li>
+  <div class="row d-none d-md-flex w-100">
+    <img class="col-2 img-fluid" src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou"
+        id="logo"><br>
+    <div class="col-10 h2 align-self-center text-right  ">Tout le jardin</div>
+</div>
 </ul>
 </nav>
 </header>
@@ -36,14 +39,28 @@
 </article> 
 <h2>Devis gratuit</h2>
 <article>
-            <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons<br> gratuitement.</p>
+            <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande <br> d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.Lorem ipsum dolor sit <br> amet consectetur, adipisicing elit. Labore dolorem, adipisci maiores earum rerum voluptate ducimus <br>repellendus sunt dignissimos blanditiis minus, officiis excepturi temporibus perferendis nam dolore consectetur illo? Veritatis?
 </article>  
   <footer> 
-      <ul>
-        <li><a href="Mention légales.html" title="mention legales">Mention légales</a></li>
-        <li><a href="horaires.html" title="horaires">Horaires</a></li>
-        <li><a href="Plan du site.html" title="plan du site">Plan du site</a></li>
-    </ul>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="">Mention légales</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">horaires</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="">Plan du site</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
   </footer>
   <!--Java script-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
