@@ -43,3 +43,12 @@ footer
 body{
     font-size: 18px;
 }
+
+body aside { 
+    position: absolute;
+    right: 100px;
+    top: 555px;
+    width: 550px;
+    height: 440px;
+    background-color:gray;
+}
