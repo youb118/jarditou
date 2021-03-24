@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>tableau</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row d-none d-md-flex w-100">
+                <img class="col-2 img-fluid" src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou"
+                    id="logo"><br>
+                <div class="col-10 h2 align-self-center text-right  ">Tout le jardin</div>
+            </div>
+            <!--Bouton promotion-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#!">Jarditou.com</a>
+                <!--Menu-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../BOOTSTRAPS/acceuilBS.html">Accueil
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../BOOTSTRAPS/TableauBS.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../BOOTSTRAPS/contactBS.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--promotion-->
+                        <input class="form-control mr-sm-2" type="text" placeholder="Ma promotion">
+                        <button class="pull-right btn btn-outline-success">Rechercher</button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <img src="img/promotion.jpg" class="img-fluid">
+
+        <div class="container shadow">
+            <form>
+
+                <div class="form-group">
+                    <!--formulaire-->
+                    <p>* Ces zones sont obligatoire</p>
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <div class="form-group">
+                            <label for="nom">Nom*</label>
+                            <input type="nom" class="form-control" id="Nom" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prenom*</label>
+                            <input type="prenom" class="form-control" id="Prenom" placeholder="Prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sexe">Sexe*</label><br>
+                            <input type="radio" name="sexe" value="Féminin" requiered> Feminin
+                            <input type="radio" name="sexe" value="Masculin" requiered> Masculin
+                            <input type="radio" name="sexe" value="Neutre" requiered> Neutre
+                        </div>
+
+                        <!--probleme a regler date de naissance-->
+                        <label for="datedenaissance">Date de naissance* :</label>
+                        <input class="form-control" type="date" name="ddn" required><br>
+
+
+                        <div class="form-group">
+                            <label for="cp">Code postal*</label>
+                            <input type="text" class="form-control" name="CP" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" class="form-control" name="Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label for="ville">Ville</label>
+                            <input type="text" class="form-control" name="ville">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" name="email" required
+                                placeholder=dave.loper@afpa.fr><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre demande</legend>
+                        <div class="form-group"></div>
+                        <label for="sujet">Sujet*</label>
+                        <select id="sujet" class="form-control" required>
+                            <option disabled="" selected> Veuillez séléctionner un sujet</option>
+                            <option value="Mes commandes" selected> Mes commandes</option>
+                            <option value="Question sur un produit" selected>Question sur un produit</option>
+                            <option value="Réclamation" selected>Réclamation</option>
+                            <option value="autres" selected>Autres</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question">Votre question*</label>
+                    <textarea class="form-control" name="Sujet" rows="2" cols="25" required></textarea>
+                </div>
+                </fieldset>
+
+            </form>
+
+            <!--Fin du formulaire, a corriger avec les requierd-->
+            <div class="container">
+                <div class="container">
+                    <input class="mb-2" type="checkbox" name="valider" value="valider" requiered> J'accepte le traitement
+                    informatique de ce formulaire</label><br>
+
+                    <button type="button" class="btn btn-dark mb-2">Envoyer</button>
+                    <button type="button" class="btn btn-dark mb-2 ">Annuler</button>
+            
+                
+                </div>
+            </div>
+        </div>
+        <footer>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bouton-footer">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bouton-footer">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Mention légales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">horaires</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Plan du site</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+    </div>
+
+    <!--Java script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

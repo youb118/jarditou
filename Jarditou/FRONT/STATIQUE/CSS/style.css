@@ -1,8 +1,11 @@
 
 nav {
-    background-color: black;
+    background-color: gray;
     padding: 20px;
     margin-bottom: 5px; 
+}
+nav a {
+    text-decoration: none;
 }
 .menu
 {
@@ -11,9 +14,12 @@ nav {
 
 footer
 {
-    background-color: black;
+    background-color:gray;
     padding: 20px;
     margin-bottom: 5px; 
+}
+footer a {
+    text-decoration: none;
 }
 
 .colorfooter
@@ -43,3 +49,39 @@ footer
 body{
     font-size: 18px;
 }
+
+body aside { 
+    position: absolute;
+    right: 100px;
+    top: 555px;
+    width: 550px;
+    height: 440px;
+    background-color:gray;
+}
+@media screen and (max-width: 768px) {
+    aside {     
+        max-width: 100%;
+        display: none;
+    } 
+    body {
+        max-width: 100%;
+        height: auto;
+    
+    }
+    nav {
+        background-color: rgb(129, 125, 125);
+        font-size: smaller;
+        max-width: 100%;
+    
+    }
+    footer {
+        background-color: rgb(129, 125, 125);
+        font-size: smaller;
+        text-align: center;
+
+    }
+    .colorfooter {
+        margin: 3%;
+    }
+    
+}   
