@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +26,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="#!">Jarditou.com</a>
-            <!--Menu-->
+                <!--Menu-->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                         <li class="nav-item active">
@@ -49,47 +50,87 @@
             </nav>
         </header>
         <img src="img/promotion.jpg" class="img-fluid">
-        <form>
-            <div class="form-group">
-                <!--formulaire-->
-                <p>* Ces zones sont obligatoire</p>
-                <fieldset>
-                    <legend>Vos coordonnées</legend>
-                    <label for="nom">Nom*</label><input type="text" name="Votre nom" requiered><br>
-                    <label for="prenom">Prenom*</label><input type="text" name="Votre prenom" requiered><br>
-                    <label for="sexe">Sexe*</label><input type="radio" name="sexe" value="Féminin" requiered> Feminin
-                    <input type="radio" name="sexe" value="Masculin" requiered> Masculin</label><br>
 
-                    <br>
-                    <label for="date">Date de naissance*</label><input type="date" name="ddn" id="date" required><br>
-                    <label for="cp">Code postal*</label><input type="text" name="CP" required><br>
-                    <label for="adresse">Adresse</label><input type="text" name="Adresse"><br>
-                    <label for="ville">Ville</label><input type="text" name="ville"><br>
-                    <label for="email">Email*</label><input type="email" name="email" required
-                        placeholder=dave.loper@afpa.fr><br>
+        <div class="container shadow">
+            <form>
+
+                <div class="form-group">
+                    <!--formulaire-->
+                    <p>* Ces zones sont obligatoire</p>
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <div class="form-group">
+                            <label for="nom">Nom*</label>
+                            <input type="nom" class="form-control" id="Nom" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom">Prenom*</label>
+                            <input type="prenom" class="form-control" id="Prenom" placeholder="Prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sexe">Sexe*</label><br>
+                            <input type="radio" name="sexe" value="Féminin" requiered> Feminin
+                            <input type="radio" name="sexe" value="Masculin" requiered> Masculin
+                            <input type="radio" name="sexe" value="Neutre" requiered> Neutre
+                        </div>
+
+                        <!--probleme a regler date de naissance-->
+                        <label for="datedenaissance">Date de naissance* :</label>
+                        <input class="form-control" type="date" name="ddn" required><br>
+
+
+                        <div class="form-group">
+                            <label for="cp">Code postal*</label>
+                            <input type="text" class="form-control" name="CP" required>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="adresse">Adresse</label>
+                            <input type="text" class="form-control" name="Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label for="ville">Ville</label>
+                            <input type="text" class="form-control" name="ville">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" class="form-control" name="email" required
+                                placeholder=dave.loper@afpa.fr><br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre demande</legend>
+                        <div class="form-group"></div>
+                        <label for="sujet">Sujet*</label>
+                        <select id="sujet" class="form-control" required>
+                            <option disabled="" selected> Veuillez séléctionner un sujet</option>
+                            <option value="Mes commandes" selected> Mes commandes</option>
+                            <option value="Question sur un produit" selected>Question sur un produit</option>
+                            <option value="Réclamation" selected>Réclamation</option>
+                            <option value="autres" selected>Autres</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="Question">Votre question*</label>
+                    <textarea class="form-control" name="Sujet" rows="2" cols="25" required></textarea>
+                </div>
                 </fieldset>
-                <fieldset>
-                    <legend>Votre demande</legend>
-                    <label for="sujet">Sujet*</label>
-                    <select id="sujet" required>
-                        <option disabled="" selected> Veuillez séléctionner un sujet</option>
-                        <option value="Mes commandes" selected> Mes commandes</option>
-                        <option value="Question sur un produit" selected>Question sur un produit</option>
-                        <option value="Réclamation" selected>Réclamation</option>
-                        <option value="autres" selected>Autres</option>
-                    </select><br>
-                    <label for="Question">votre question*</label>
-                    <textarea name="Sujet" rows="2" cols="25" required></textarea>
-                </fieldset>
+
+            </form>
+
+            <!--Fin du formulaire, a corriger avec les requierd-->
+            <div class="container">
+                <div class="container">
+                    <input type="checkbox" name="valider" value="valider" requiered> J'accepte le traitement
+                    informatique de ce formulaire</label><br>
+
+                    <button type="button" class="btn btn-dark">Envoyer</button>
+                    <button type="button" class="btn btn-dark">Annuler</button>
+            
+                
+                </div>
             </div>
-        </form>
-        <!--Fin du formulaire, a corriger avec les requierd-->
-        <br>
-        <input type="checkbox" name="valider" value="valider" requiered>* J'accepte le traitement informatique de ce
-        formulaire</label><br>
-        <br>
-        <button type="button" class="btn btn-dark">Envoyer</button>
-        <button type="button" class="btn btn-dark">Annuler</button>
+        </div>
         <footer>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
                 <!-- Toggler/collapsibe Button -->
@@ -111,16 +152,19 @@
                 </div>
             </nav>
         </footer>
-        <!--Java script-->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
     </div>
+
+    <!--Java script-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
