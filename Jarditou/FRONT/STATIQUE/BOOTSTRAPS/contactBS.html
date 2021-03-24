@@ -1,33 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>contact</title>
+    <title>tableau</title>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <div class="row d-none d-md-flex">
+            <div class="row d-none d-md-flex w-100">
                 <img class="col-2 img-fluid" src="img/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou"
                     id="logo"><br>
-                <div class="col-10 h2 align-self-center text-right  ">La qualité depuis 70 ans</div>
-                <nav>
-                    <ul>
-                        <li><a href="acceuilBS.html" class="menu" title="Page d'accueil">Accueil</a></li>
-                        <li><a href="TableauBS.html" class="menu" title="tableau">Tableau</a></li>
-                        <li><a href="contactBS.html" class="menu" title="contact">Formulaire</a></li>
+                <div class="col-10 h2 align-self-center text-right  ">Tout le jardin</div>
+            </div>
+            <!--Bouton promotion-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#!">Jarditou.com</a>
+            <!--Menu-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../BOOTSTRAPS/acceuilBS.html">Accueil
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../BOOTSTRAPS/TableauBS.html">Tableau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../BOOTSTRAPS/contactBS.html">Contact</a>
+                        </li>
                     </ul>
-                </nav>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Ma promotion">
+                    </form>
+                </div>
+            </nav>
         </header>
-        <img src="img/promotion.jpg" width="100%">
+        <img src="img/promotion.jpg" class="img-fluid">
         <form>
             <div class="form-group">
+                <!--formulaire-->
                 <p>* Ces zones sont obligatoire</p>
                 <fieldset>
                     <legend>Vos coordonnées</legend>
@@ -99,5 +121,4 @@
             crossorigin="anonymous"></script>
     </div>
 </body>
-
 </html>
