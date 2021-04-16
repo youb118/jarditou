@@ -52,7 +52,7 @@
         <img src="img/promotion.jpg" class="img-fluid">
 
         <div class="container shadow">
-            <form>
+            <form id="form">
 
                 <div class="form-group">
                     <!--formulaire-->
@@ -61,47 +61,56 @@
                         <legend>Vos coordonnées</legend>
                         <div class="form-group">
                             <label for="nom">Nom*</label>
-                            <input type="nom" class="form-control" id="Nom" placeholder="Nom" required>
+                            <input type="nom" class="form-control" id="nom" placeholder="Nom" required>
+                        
+
                         </div>
                         <div class="form-group">
                             <label for="prenom">Prenom*</label>
                             <input type="prenom" class="form-control" id="Prenom" placeholder="Prenom" required>
+
                         </div>
                         <div class="form-group">
                             <label for="sexe">Sexe*</label><br>
-                            <input type="radio" name="sexe" value="Féminin" requiered> Feminin
-                            <input type="radio" name="sexe" value="Masculin" requiered> Masculin
-                            <input type="radio" name="sexe" value="Neutre" requiered> Neutre
-                        </div>
 
-                        <!--probleme a regler date de naissance-->
+                            <input type="radio" name="sexe" id="sexe1" value="Féminin" requiered> Feminin
+                            <input type="radio" name="sexe" id="sexe2" value="Masculin" requiered> Masculin
+                            <input type="radio" name="sexe" id="sexe3" value="Neutre" requiered> Neutre
+                        </div>
+                        <div class="form-group">
                         <label for="datedenaissance">Date de naissance* :</label>
-                        <input class="form-control" type="date" name="ddn" required><br>
+                        <input class="form-control" type="date" id="date" name="ddn" required><br>
+                        </div>
 
 
                         <div class="form-group">
                             <label for="cp">Code postal*</label>
-                            <input type="text" class="form-control" name="CP" required>
+                            <input type="text" class="form-control" id="codepost" name="CP" required>
+
 
                         </div>
                         <div class="form-group">
                             <label for="adresse">Adresse</label>
-                            <input type="text" class="form-control" name="Adresse">
+                            <input type="text" class="form-control" id="adresse" name="Adresse">
+
                         </div>
                         <div class="form-group">
                             <label for="ville">Ville</label>
-                            <input type="text" class="form-control" name="ville">
+                            <input type="text" class="form-control" id="ville" name="ville">
+
                         </div>
                         <div class="form-group">
                             <label for="email">Email*</label>
-                            <input type="email" class="form-control" name="email" required
+                            <input type="email" class="form-control" id="mail" name="email" required
                                 placeholder=dave.loper@afpa.fr><br>
+
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Votre demande</legend>
                         <div class="form-group"></div>
                         <label for="sujet">Sujet*</label>
+
                         <select id="sujet" class="form-control" required>
                             <option disabled="" selected> Veuillez séléctionner un sujet</option>
                             <option value="Mes commandes" selected> Mes commandes</option>
@@ -111,24 +120,27 @@
                         </select>
                 </div>
                 <div class="form-group">
-                    <label for="Question">Votre question*</label>
+                    <label for="Question" id="question">Votre question*</label>
                     <textarea class="form-control" name="Sujet" rows="2" cols="25" required></textarea>
+
                 </div>
                 </fieldset>
+                <div class="container">
+                    <div class="container">
+                        <input type="checkbox" id="accept" style="margin-bottom: 1%;" name="valider" value="valider"
+                            requiered> J'accepte le traitement
+                        informatique de ce formulaire</label><br>
+
+
+                        <button style="margin-bottom: 1%;" type="button" class="btn btn-dark">Envoyer</button>                        
+                        <button style="margin-bottom: 1%;" type="button" class="btn btn-dark">Annuler</button>
+
+                    </div>
+                </div>
+
 
             </form>
 
-            <!--Fin du formulaire, a corriger avec les requierd-->
-            <div class="container">
-                <div class="container">
-                    <input type="checkbox" style="margin-bottom: 1%;" name="valider" value="valider" requiered> J'accepte le traitement
-                    informatique de ce formulaire</label><br>
-
-                    <button style="margin-bottom: 1%;" type="button" class="btn btn-dark">Envoyer</button>
-                    <button style="margin-bottom: 1%;" type="button" class="btn btn-dark">Annuler</button>
-                
-                </div>
-            </div>
         </div>
         <footer>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark rounded">
@@ -163,6 +175,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="/Ayoub/Jarditou/FRONT/DYNAMIQUE/JAVASCIPT/formulaire.js"></script>
 
 </body>
 
