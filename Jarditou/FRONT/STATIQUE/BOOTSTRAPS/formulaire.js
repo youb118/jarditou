@@ -66,6 +66,7 @@ date.addEventListener("blur",function(){
     if (resultatdate == false){
         var error_date = "Veuillez saisir une date de naissance"
         tableauErreur[2]=(false);
+
     }
 
     else
@@ -134,6 +135,7 @@ checkbox.addEventListener("blur",function(){
     {
         var error_checkbox = "veuillez accepter le traitement informatique du formulaire";
         tableauErreur[6]=(false);
+        
     }
 
     else
