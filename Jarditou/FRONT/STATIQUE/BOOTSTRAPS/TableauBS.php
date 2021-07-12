@@ -30,15 +30,15 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../BOOTSTRAPS/acceuilBS.html">Accueil
+                            <a class="nav-link" href="../BOOTSTRAPS/index.php">Accueil
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../BOOTSTRAPS/TableauBS.html">Tableau</a>
+                            <a class="nav-link" href="../BOOTSTRAPS/TableauBS.php">Tableau</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../BOOTSTRAPS/contactBS.html">Contact</a>
+                            <a class="nav-link" href="../BOOTSTRAPS/contactBS.php">Contact</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
